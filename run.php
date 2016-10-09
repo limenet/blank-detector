@@ -11,7 +11,6 @@ check($root);
 function check($dir)
 {
     foreach (glob($dir.'/*') as $file) {
-        var_dump($file);
         if (is_dir($file)) {
             check($file);
         } elseif (getimagesize($file)) {
