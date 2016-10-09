@@ -8,7 +8,8 @@ $root = 'C:\Users\Linus\Dropbox\_IO\PhotoSync';
 
 check($root);
 
-function check($dir) {
+function check($dir)
+{
     foreach (glob($dir.'/*') as $file) {
         var_dump($file);
         if (is_dir($file)) {
